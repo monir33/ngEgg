@@ -14,25 +14,18 @@
 	<script src='app.js'></script>
 </head>
 <body>
-<!-- example 4: sharing date between controller -->
+<!-- example 5: defining method on the scope -->
+
 <div ng-app="app">
-	<!-- <div ui-view></div> -->
-	<ui-view></ui-view>
-</div>
-
-
-<!-- example 3: the dot -->
-<!-- <div ng-app="app">
-		<input type="text" ng-model='data.message'>
-		<h1>{{data.message}}</h1>
 	<div ng-controller="firstCtrl">
- 		<input type="text" ng-model='data.message'>
-		<h1>{{data.message}}</h1>
+		<input type="text" ng-model='data.message'>
+		<h1> {{data.message}} </h1>
 	</div>
 	<div ng-controller="secondCtrl">
 		<input type="text" ng-model='data.message'>
-		<h1>{{data.message}}</h1>
+		<h1> {{reverse(data.message)}} </h1>
 	</div>
-</div> -->
+</div>
+
 </body>
 </html>
